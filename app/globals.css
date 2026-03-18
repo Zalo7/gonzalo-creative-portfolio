@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* ── General Sans — local font ── */
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('/fonts/GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GeneralSans-Semibold';
+  src: url('/fonts/GeneralSans-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GeneralSans-Bold';
+  src: url('/fonts/GeneralSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design Tokens ── */
+@theme {
+  --color-brand-magenta: #f72585;
+  --color-brand-magenta-light: #fde8f1;
+  --color-brand-black: #111111;
+  --color-brand-white: #ffffff;
+  --color-brand-off-white: #fef6f9;
+  --color-brand-gray: #888888;
+}
+
+/* ── Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: 'GeneralSans-Regular', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'GeneralSans-Bold', system-ui, sans-serif;
+  font-weight: 700;
+}
+
+::selection {
+  background: #f72585;
+  color: white;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #fef6f9; }
+::-webkit-scrollbar-thumb { background: #f72585; border-radius: 3px; }
+
+:focus-visible {
+  outline: 2px solid #f72585;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Layout ── */
+.section-padding {
+  padding: clamp(80px, 10vw, 140px) clamp(24px, 6vw, 80px);
+}
+
+.container-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Marquee ── */
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Section divider ── */
+.section-transition {
+  position: relative;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f72585, transparent);
+  opacity: 0.25;
+}
