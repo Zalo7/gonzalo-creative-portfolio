@@ -1,6 +1,3 @@
 {
-  "buildCommand": "git lfs pull --include='public/' && npm run build",
-  "env": {
-    "GIT_LFS_SKIP_SMUDGE": "0"
-  }
+  "buildCommand": "npm run build"
 }

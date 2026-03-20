@@ -70,8 +70,8 @@ export default function Hero() {
       {/* Decorative line */}
       <motion.div
         initial={{ scaleX: 0 }} animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 1.8 }}
-        style={{ position: "absolute", left: 0, top: "52%", height: 1, width: 128, backgroundColor: S.magenta, opacity: 0.4, transformOrigin: "left" }}
+        transition={{ duration: 0.8, delay: 1.8, transformOrigin: "left" }}
+        style={{ position: "absolute", left: 0, top: "52%", height: 1, width: 128, backgroundColor: S.magenta, opacity: 0.4 }}
       />
 
       {/* Main content */}
@@ -194,7 +194,7 @@ export default function Hero() {
       >
         <div style={{ width: 80, height: 80, borderRadius: 18, backgroundColor: "#fde8f1", overflow: "hidden", position: "relative", flexShrink: 0 }}>
           <video
-            src="/memoji/memoji.mp4"
+            src="https://res.cloudinary.com/dzzb9h5xc/video/upload/v1773799399/Disen%CC%83o_sin_ti%CC%81tulo_1_uvk060.mp4"
             autoPlay loop muted playsInline
             style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%) scale(1.4)", width: "100%", height: "100%", objectFit: "cover" }}
           />

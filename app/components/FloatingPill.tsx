@@ -43,9 +43,9 @@ const MENU_ITEMS = [
 ];
 
 const SOCIALS = [
-  { label: "Instagram", url: "https://instagram.com/gonzalolorenzon" },
-  { label: "LinkedIn", url: "https://linkedin.com/in/gonzalolorenzon" },
-  { label: "TikTok", url: "https://tiktok.com/@gonzalolorenzon" },
+  { label: "Instagram", url: "https://instagram.com/lorenzon_gonzalo" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/gonzalolorenzonfullstack/" },
+  { label: "TikTok", url: "https://tiktok.com/@zalo78" },
 ];
 
 export default function FloatingPill() {
@@ -179,7 +179,7 @@ export default function FloatingPill() {
           alignItems: "center",
           gap: 16,
           backgroundColor: "#111111",
-          borderRadius: 20,
+          borderRadius: 100,
           padding: "8px 20px 8px 8px",
           boxShadow: open
             ? "0 8px 60px rgba(247,37,133,0.35), 0 2px 12px rgba(0,0,0,0.4)"
@@ -191,18 +191,18 @@ export default function FloatingPill() {
       >
         {/* Memoji */}
         <div style={{
-          width: 80, height: 80, borderRadius: 20,
+          width: 80, height: 80, borderRadius: 18,
           backgroundColor: "#fde8f1",
           overflow: "hidden", position: "relative", flexShrink: 0,
         }}>
           <video
-            src="/memoji/memoji.mp4"
+            src="https://res.cloudinary.com/dzzb9h5xc/video/upload/v1773799399/Disen%CC%83o_sin_ti%CC%81tulo_1_uvk060.mp4"
             autoPlay loop muted playsInline
             style={{
               position: "absolute",
               top: "50%", left: "50%",
               transform: "translate(-50%, -50%) scale(1.4)",
-              width: "85%", height: "85%",
+              width: "100%", height: "100%",
               objectFit: "cover",
             }}
           />
