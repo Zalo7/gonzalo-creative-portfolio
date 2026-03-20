@@ -69,10 +69,10 @@ export default function Hero() {
 
       {/* Decorative line */}
       <motion.div
-        initial={{ scaleX: 0 }} animate={{ scaleX: 1 }}
-        transition={{ duration: 0.8, delay: 1.8, transformOrigin: "left" }}
-        style={{ position: "absolute", left: 0, top: "52%", height: 1, width: 128, backgroundColor: S.magenta, opacity: 0.4 }}
-      />
+  initial={{ scaleX: 0 }} animate={{ scaleX: 1 }}
+  transition={{ duration: 0.8, delay: 1.8 }}
+  style={{ position: "absolute", left: 0, top: "52%", height: 1, width: 128, backgroundColor: S.magenta, opacity: 0.4, transformOrigin: "left" }}
+/>
 
       {/* Main content */}
       <div className="container-width section-padding" style={{ paddingTop: 48, paddingBottom: 0 }}>
