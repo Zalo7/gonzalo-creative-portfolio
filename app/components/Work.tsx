@@ -80,7 +80,7 @@ const PROJECTS: Project[] = [
     category: "Filmmaking",
     description: "Short film exploring visual storytelling.",
     video: "https://res.cloudinary.com/dzzb9h5xc/video/upload/v1774018305/20260123170901770_f9d6bk.mov",
-    thumbnail: "/thumbnails/Itapema.png",
+    thumbnail: "/thumbnails/Venice.png",
     tags: ["Filmmaking", "Storytelling"],
     client: "Personal",
   },

@@ -258,7 +258,7 @@ export default function About() {
             >
               <div style={{ aspectRatio: "9/16", backgroundColor: "#1a1a1a", position: "relative" }}>
                 <video
-                  src="https://res.cloudinary.com/dzzb9h5xc/video/upload/v1773799399/Disen%CC%83o_sin_ti%CC%81tulo_1_uvk060.mp4"
+                  src="https://res.cloudinary.com/dzzb9h5xc/video/upload/v1774042254/Portfolio-Video_d6lwvr.mov"
                   autoPlay loop muted playsInline
                   style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", inset: 0 }}
                 />
