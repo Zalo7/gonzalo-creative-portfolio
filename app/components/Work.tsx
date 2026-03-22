@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
     category: "Social Media",
     description: "Monthly content production and community management.",
     video: "https://res.cloudinary.com/dzzb9h5xc/video/upload/v1773964311/66af08f4b8e544ef9953e015e590b27d_cfwznk.mov",
-    thumbnail: "/thumbnails/Venice.png",
+    thumbnail: "/thumbnails/Mallorca.png",
     tags: ["Reels", "SMM"],
     client: "Freelance",
   },
