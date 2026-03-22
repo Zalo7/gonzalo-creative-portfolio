@@ -191,7 +191,7 @@ export default function FloatingPill() {
       >
         {/* Memoji */}
         <div style={{
-          width: 70, height: 70, borderRadius: 18,
+          width: 80, height: 80, borderRadius: 18,
           backgroundColor: "#fde8f1",
           overflow: "hidden", position: "relative", flexShrink: 0,
         }}>
@@ -202,7 +202,7 @@ export default function FloatingPill() {
               position: "absolute",
               top: "50%", left: "50%",
               transform: "translate(-50%, -50%) scale(1.4)",
-              width: "100%", height: "100%",
+              width: "90%", height: "90%",
               objectFit: "cover",
             }}
           />

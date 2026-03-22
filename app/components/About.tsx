@@ -268,10 +268,6 @@ export default function About() {
                   display: "flex", alignItems: "center", justifyContent: "center",
                   flexDirection: "column", gap: 8,
                 }}>
-                  
-                  <div style={{ fontFamily: S.body, fontSize: "0.6rem", color: "rgba(255,255,255,0.15)", letterSpacing: "0.12em", textTransform: "uppercase" }}>
-                    Video coming soon
-                  </div>
                 </div>
                 {/* Label */}
                 <div style={{
